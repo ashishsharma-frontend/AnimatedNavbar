@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+a{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(2.2rem, 6vw, 6rem);
+}
+
+.nav-link:hover {
+    font-family:  "Caveat", cursive;
+  }
+  
+
+  @media (max-width: 750px) {
+    .nav-main {
+        display: flex;
+        flex-direction: column;
+        margin-right: -10px;
+    }
+
+    .NavLinks {
+        margin-left: -25rem;
+        margin-top: 2rem;
+     }
+
+     .second-section img{
+       display: none;
+     }
+  }
+
+  @media (max-width : 500px) {
+     .nav-main {
+        margin-right: -13px;
+     }
+
+     .NavLinks {
+        margin-left: -18rem;
+     }
+ 
+  }

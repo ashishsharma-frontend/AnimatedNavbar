@@ -3,7 +3,7 @@
 
 a{
     font-family: "Bebas Neue", sans-serif;
-    font-size: clamp(2.2rem, 6vw, 6rem);
+    font-size: clamp(3rem, 6vw, 6rem);
 }
 
 .nav-link:hover {
@@ -11,6 +11,13 @@ a{
   }
   
 
+  @media (max-width : 1000px) {
+   .nav-main {
+
+      margin-right: -15px;
+  }
+  }
+ 
   @media (max-width: 750px) {
     .nav-main {
         display: flex;
@@ -18,14 +25,18 @@ a{
         margin-right: -10px;
     }
 
-    .NavLinks {
-        margin-left: -25rem;
-        margin-top: 2rem;
-     }
-
      .second-section img{
        display: none;
      }
+
+     .second-section {
+      margin-bottom: 2rem;
+     }
+
+     .NavLinks {
+      margin-left: -25rem;
+      margin-top: 2rem;
+   }
   }
 
   @media (max-width : 500px) {
@@ -34,7 +45,7 @@ a{
      }
 
      .NavLinks {
-        margin-left: -18rem;
+        margin-left: -15rem;
      }
  
   }

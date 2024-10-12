@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import BearImg from "./ProjectImages/BearImg.webp";
+import LogoImg from "./ProjectImages/Logo.gif"; // Import the logo image
 
 import {
   FaFacebookF,
@@ -148,7 +149,19 @@ const Navbar = () => {
       </AnimatePresence>
 
       {/* Navbar Trigger */}
-      <nav className="z-50 flex items-center justify-end">
+      <nav className="z-50 flex items-center justify-between px-4">
+        {/* Logo Section */}
+        <div className="logo-container">
+          <Link to="/">
+            <img
+              src={LogoImg}
+              alt="Logo"
+              style={{ width: "50px", marginLeft :  '1rem'}} // Set desired size
+            />
+          </Link>
+        </div>
+
+        {/* Burger Menu */}
         <div
           style={{ backgroundColor: "#B6FFA1" }}
           onMouseEnter={() => setIsHover(true)}
